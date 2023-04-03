@@ -1,15 +1,105 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>
-Microverse trial
-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microverse Trial Build a Survey Form Project</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
+
 <body>
-<p>
-  Hello World, we are software developers!
-</p>
+    <div id="heading">
+    <h1 id="title"> Build a Survey Form</h1>
+    <p id="description">We are developing Build a Survey Form for Microverse Trial usng html and Css responsive web design tools </p>
+    </div>
+
+
+
+    <div id="main">
+
+
+        <form id="survey-form">
+        <div id="input-fields">
+
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="text" name="name"   required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email"   required placeholder="bura@gmail.com"><br>
+            <br>
+            <label id="number-label"><b>Phd Program duratiion :</b></label>
+            <input id="number" type="number" name="number"  min="4" max="8" placeholder="4+">
+         </div>
+
+
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Full Stack Devloper's Language : </strong></label><br>
+            <select id="dropdown" name="Web-lang" >
+                
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="php">PHP</option>
+                <option value="Js">Java Script</option>
+                <option value="Java">Java</option>
+                <option value="html and css">responsive web design tools</option>
+                 
+            </select>
+
+          </div>
+         <div id="button-area">
+             <br>
+             <label>Do you agree with the following statement?</label>
+              <div>
+                 <input type="radio" id="yes" name="agree" value="yes" required>
+                 <label for="yes">Yes</label>
+               </div>
+              <div>
+                 <input type="radio" id="no" name="agree" value="no">
+                 <label for="no">No</label>
+              </div>
+
+          </div>
+          <div id="button-area"><br>
+            <label id="Skill-label"><b>Codding  experience: </b></label><br>
+            <input type="checkbox" name="Python Programming" value="Django" checked> I am experienced with Django framwork<br>
+            <input type="checkbox" name="Java Programming" value="JDBC"> I am experienced with JWT<br>
+            <input type="checkbox" name="Js Programming" value="nodejs"> I am experienced with nodejs framework<br>
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>Programming language you wanna be expert: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form"><br><br>
+                <option value="C">C (Programming Language)</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="php">PHP</option>
+                <option value="Js">Java Script</option>
+                <option value="Go">Go (Programming Language)</option>
+                <option value="ruby">Ruby on rails</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+            </select>
+         </div>
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>Latest technology experience:</b></label><br>
+            <input type="checkbox" name="tech1" value="flutter"> Flutter UI<br>
+            <input type="checkbox" name="tech2" value="nodejs"> Node.js<br>
+            <input type="checkbox" name="tech3" value="tnflow"> Tensorflow<br>
+            <input type="checkbox" name="tech3" value="git"> Github<br>
+            <input type="checkbox" name="tech3" value="devops"> Dev-Ops<br>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Do you have any suggestion about this Build a Survey Form ?</label><br>
+            <textarea style= height:120px;" class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+
+        </form>
+    </div>
+
 </body>
+ 
 </html>
